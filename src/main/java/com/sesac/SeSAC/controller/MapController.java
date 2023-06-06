@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 public class MapController {
     final DangerService dangerService;
     @GetMapping("/dangerInfo")
-    public ArrayList<DangerInfo> getAllDangerInfo(){
-        return dangerService.getAllDangerInfos();
+    public List<DangerInfo> getAllDangerInfo(){
+        return dangerService.findAllDanger();
     }
 }
