@@ -19,6 +19,12 @@ public class RunningInfoRepository {
         em.persist(runningInfo);
     }
 
+    public List<RunningInfo> findAll(){
+        List<RunningInfo> result = em.createQuery("select r from running_info r", RunningInfo.class)
+                .getResultList();
+        return result;
+    }
+
     public List<RunningInfo> findByUserId(Long userId){
         List<RunningInfo> result = em.createQuery("select r from running_info r where r.userId = :userId", RunningInfo.class)
                 .setParameter("userId", userId)
