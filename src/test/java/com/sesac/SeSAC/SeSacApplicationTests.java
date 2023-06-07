@@ -10,4 +10,9 @@ class SeSacApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void test1(){
+
+	}
+
 }
