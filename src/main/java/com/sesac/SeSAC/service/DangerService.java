@@ -1,5 +1,4 @@
 package com.sesac.SeSAC.service;
-
 import com.sesac.SeSAC.model.DangerInfo;
 import com.sesac.SeSAC.model.User;
 import com.sesac.SeSAC.repository.DangerInfoRepository;

@@ -1,6 +1,4 @@
 package com.sesac.SeSAC.model;
-
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -44,5 +42,4 @@ public class DangerInfo {
         dangerInfo.setPicture(picturePath);
         return dangerInfo;
     }
-
 }
