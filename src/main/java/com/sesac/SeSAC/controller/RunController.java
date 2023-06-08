@@ -1,8 +1,10 @@
 package com.sesac.SeSAC.controller;
 
 import com.sesac.SeSAC.model.RunningInfo;
+import com.sesac.SeSAC.model.User;
 import com.sesac.SeSAC.service.DangerService;
 import com.sesac.SeSAC.service.RunningService;
+import com.sesac.SeSAC.service.UserService;
 import com.sesac.SeSAC.util.ImageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -18,6 +20,7 @@ public class RunController {
     final RunningService runningService;
     final DangerService dangerService;
     final ImageService imageService;
+    final UserService userService;
     private String uploadPath = "/Users/musung/testPath";
     @PostMapping("/saveImage")
     public String saveImage(@RequestBody MultipartFile file) throws IOException {
@@ -28,8 +31,9 @@ public class RunController {
             return "fail";
         }
     }
-    @PostMapping("/runingInfo")
+    @PostMapping("/runningInfo")
     public void postRunningInfo(@RequestBody RunningInfo runningInfo){
+        userService.join(runningInfo.getUser());
         runningService.join(runningInfo);
     }
 }
