@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="JDBC@localhost" uuid="a4755ea8-582c-4435-8d0f-445224ff9598">
+    <data-source source="LOCAL" name="musung-jdbc" uuid="ba114913-5e05-4393-8652-ad54b2a3b74b">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/JDBC</jdbc-url>
+      <jdbc-url>jdbc:mysql://musung-db.cri8dopnyryy.us-east-1.rds.amazonaws.com:3306/JDBC</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
