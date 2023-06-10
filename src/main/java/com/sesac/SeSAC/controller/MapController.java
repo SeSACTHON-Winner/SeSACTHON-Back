@@ -12,11 +12,10 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/t.run/run")
 public class MapController {
     final DangerService dangerService;
-    @GetMapping("/dangerInfo")
-    public List<DangerInfo> getAllDangerInfo(){
-        return dangerService.findAllDanger();
+    @GetMapping("/")
+    public String hello(){
+        return "hello world";
     }
 }
