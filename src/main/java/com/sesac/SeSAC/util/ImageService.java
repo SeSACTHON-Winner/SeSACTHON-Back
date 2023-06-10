@@ -21,6 +21,7 @@ public class ImageService {
             return filePath.toString();
         }
         catch (IOException e){
+            System.out.println(e.toString());
             return null;
         }
     }
