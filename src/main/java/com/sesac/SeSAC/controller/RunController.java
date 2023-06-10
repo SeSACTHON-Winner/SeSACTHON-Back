@@ -21,7 +21,7 @@ public class RunController {
     final DangerService dangerService;
     final ImageService imageService;
     final UserService userService;
-    private String uploadPath = "~/image";
+    private String uploadPath = "/home/ubuntu/image";
     @PostMapping("/saveImage")
     public String saveImage(@RequestBody MultipartFile file) throws IOException {
         try{
